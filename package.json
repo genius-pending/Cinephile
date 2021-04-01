@@ -1,0 +1,36 @@
+{
+  "name": "cinephile",
+  "version": "1.0.0",
+  "description": "Movie search Application ",
+  "main": "index.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run prod || npm run dev",
+    "prod": "cd server && node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm run start",
+    "server": "cd server && npx nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail 'npm:server' 'npm:client'",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/genius-pending/Cinephile.git"
+  },
+  "author": "shivey singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/genius-pending/Cinephile/issues"
+  },
+  "homepage": "https://github.com/genius-pending/Cinephile#readme",
+  "dependencies": {
+    "concurrently": "^6.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.5",
+    "mongoose": "^5.12.3",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.7"
+  }
+}
