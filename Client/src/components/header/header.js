@@ -6,7 +6,7 @@ const Header = () => {
 
   return(
   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-   <a class="navbar-brand" href="www.google.com"><img src = {navbarimage} alt ="logo" style={{width:"45px"}}></img> Cinephille</a>
+   <a class="navbar-brand" href="www.google.com"><img src = {navbarimage} alt ="logo" style={{width:"45px"}}></img> Cinephile</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
