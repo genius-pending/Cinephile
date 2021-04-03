@@ -7,6 +7,15 @@
   pointer-events: none;
 }
 
+body {
+ background-image:url('./components/maincover/mainbackground\ .jpg');
+ background-position:center ;
+ background-size:100%;
+ background-repeat: cover;
+
+ 
+ }
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
